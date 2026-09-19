@@ -8,8 +8,11 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String hello() {
-        return "Hello from Spring Boot running on AWS ECS!";
+        return "Hello from Spring Boot running on AWS ECR!";
     }
+
+    @GetMapping("/lambda")
+    public String callLambda() { return "Hello from AWS Lambda!"; }
 }
 
 
